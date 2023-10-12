@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.video-miniatures{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.miniature{
+    width: 220px;
+    height: 130px;
+    background-color: rgb(255, 88, 88);
+    margin: 0.5rem 0.2rem;
+}
