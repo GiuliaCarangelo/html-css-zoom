@@ -4,11 +4,47 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
+.capitalized-text{
+    text-transform: capitalize;
+}
+
+header{
+    position: relative;
+    right: -2.8rem;
+    height: 50px;
+}
+
+.header-buttons{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-buttons > a{
+    color: white;
+    background-color: #4a4a4a;
+    padding: 0.2rem 0 0.2rem;
+    border-radius: 5px;
+    margin-right: 0.3rem;
+}
+
+.button-content{
+    display: inline-block;
+    line-height: 1.6rem;
+}
+
 main{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #000000;
-    padding: 3rem 3rem 1rem 3rem;
+    padding: 0.1rem 3rem 1rem 3rem;
 }
 
 .video-miniatures{
@@ -18,8 +54,19 @@ main{
 }
 
 .miniature{
+    position: relative;
     width: 220px;
     height: 130px;
-    background-color: rgb(255, 88, 88);
+    background-image: url(https://picsum.photos/seed/picsum/220/130);
     margin: 0.5rem 0.2rem;
+}
+
+.user-name-surname{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+    font-weight: 400;
+    font-size: small;
+    padding: 0.2rem 0.1rem;
 }
